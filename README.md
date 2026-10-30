@@ -32,3 +32,8 @@ This repository contains a static HTML page and documents no build or deployment
 Keep changes scoped to the relevant content or styling in `index.html`. Preserve the filename and any existing relative references unless a change requires updating them; if you add or move an asset, update its page reference too. In the handoff, briefly describe what changed and identify the affected file or page area.
 
 Before publishing, manually open the page and review the invitation, sunflower, and bloom animation. Check a narrow phone-sized viewport and a wide desktop-sized viewport for clipping or overflow. If you add an interaction, try it in the browser. This is a review checklist, not a report of completed testing or verified results.
+
+## Final release review
+
+- Open `index.html` from the published location and confirm the page loads as expected.
+- Review the published result once on a narrow screen and once on a wider screen; treat this as a release check, not an automated test report.
