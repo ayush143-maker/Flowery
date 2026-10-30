@@ -18,12 +18,14 @@ The root files list only `index.html` and this README, so begin by locating the 
 
 ## Manual review checklist
 
-Use these actions to review a change; they are not verified results.
+Use these actions to review a change. This is a checklist, not a report of completed checks or measured performance.
 
-- Open the known entry page, `index.html`, in a browser, or open `http://localhost:8000` after starting the local server above.
+- Open `index.html` in a browser, or visit `http://localhost:8000` after starting the local server above.
 - Check the invitation text, dark backdrop, and sunflower at both a narrow phone-sized viewport and a wide desktop-sized viewport.
 - Observe the existing bloom animation. If your change introduces an interaction, try it in the browser.
-- Check any referenced image or media paths after adding or changing assets, and confirm that the page points to their actual locations.
+- Check local image, audio, and font references added to `index.html` against files that exist at those paths. The root file list contains no separate asset directory.
+- If you add media, review whether its dimensions and file size suit its use; avoid keeping oversized or unused files. Before removing an asset, check that no page or style still refers to it.
+- Review any external font or script references you add. Keep them only when intentional and used, and consider how the page should render if an external font cannot load.
 
 ## Accessibility review checklist
 
