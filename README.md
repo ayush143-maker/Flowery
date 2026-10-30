@@ -4,11 +4,11 @@ A small animated sunflower-themed web page built around the invitation “Have a
 
 ## Open locally
 
-No package installation is needed. Open `index.html` in a modern browser, or use a local server:
+No package installation is needed. Open `index.html` in a modern browser, or, from the repository directory, serve the folder with:
 
     python -m http.server 8000
 
-Visit http://localhost:8000.
+Then visit http://localhost:8000.
 
 ## Making changes
 
