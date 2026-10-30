@@ -1,6 +1,6 @@
 # Flowery
 
-A small animated sunflower-themed web page built around the invitation “Have a flower.” Open the page to see its dark backdrop and central blooming-flower presentation; it is a brief visual experience, with no additional controls described.
+A small animated sunflower-themed web page built around the invitation “Have a flower.” The experience is contained in the top-level `index.html`: open it to see the dark backdrop and central blooming-flower presentation. No additional controls are described.
 
 ## Open locally
 
@@ -12,4 +12,4 @@ Then visit http://localhost:8000.
 
 ## Making changes
 
-The experience is contained in `index.html`. Keep the flower and message central, and test the page at desktop and mobile sizes.
+Keep the flower and message central, and test the page at desktop and mobile sizes.
