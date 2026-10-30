@@ -24,3 +24,14 @@ Use these actions to review a change; they are not verified results.
 - Check the invitation text, dark backdrop, and sunflower at both a narrow phone-sized viewport and a wide desktop-sized viewport.
 - Observe the existing bloom animation. If your change introduces an interaction, try it in the browser.
 - Check any referenced image or media paths after adding or changing assets, and confirm that the page points to their actual locations.
+
+## Accessibility review checklist
+
+Use these as future review steps, not as claims of verified accessibility.
+
+- If the page has interactive elements, try to reach and operate each one using only the keyboard. Check that the bloom or any other interaction does not depend on pointer input alone.
+- Check that keyboard focus is visible against the dark backdrop and remains easy to track.
+- Review the invitation and any control text for clear meaning. If controls are added, check that each has a meaningful accessible name.
+- Check the contrast of the invitation and any other text against the dark background, including after color changes.
+- If you add an image, check whether it communicates meaningful content and needs a text alternative; keep decorative imagery from creating redundant announcements.
+- Check the bloom animation with reduced motion requested. Consider reducing or stopping nonessential motion in that case.
