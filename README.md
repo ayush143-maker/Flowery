@@ -16,6 +16,10 @@ Then visit http://localhost:8000. No deployment configuration is documented.
 
 The root files list only `index.html` and this README, so begin by locating the existing invitation text and the styles for the dark backdrop and sunflower in `index.html`. Change the wording or colors there. If you introduce an external image or another asset, add it deliberately and update its reference in `index.html` to match its actual path; no separate asset directory is listed at the repository root.
 
+## Configuration and data handling
+
+This repository is a static page with no package or backend configuration listed. No `.env.example` is present. Do not add credentials or private values to `index.html` or other tracked files: anything embedded in a static page is delivered to visitors and cannot be secret. The page's text and any added assets are part of the site content, so review personal details and media before sharing or publishing the page.
+
 ## Browser and layout review checklist
 
 This is a checklist for future review, not a report of completed browser testing or verified results.
