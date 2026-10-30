@@ -9,3 +9,5 @@ No package installation is needed. Open `index.html` in a browser, or serve the 
     python -m http.server 8000
 
 Then visit http://localhost:8000. After editing, reload the page and review its layout at desktop and mobile viewport sizes. Keep the flower and message central.
+
+No hosting provider or provider-specific deployment steps are documented. The page can be served as static content; no additional deployment configuration is described.
