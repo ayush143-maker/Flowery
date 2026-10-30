@@ -4,8 +4,8 @@ A small animated sunflower-themed web page built around the invitation “Have a
 
 ## Open and review locally
 
-No package installation is needed. Open `index.html` in a modern browser, or serve the folder from the repository directory:
+No package installation is needed. Open `index.html` in a browser, or serve the folder from the repository directory:
 
     python -m http.server 8000
 
-Then visit http://localhost:8000. After editing, reload the page and check it at desktop and mobile sizes. Keep the flower and message central.
+Then visit http://localhost:8000. After editing, reload the page and review its layout at desktop and mobile viewport sizes. Keep the flower and message central.
