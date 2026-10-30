@@ -1,6 +1,6 @@
 # Flowery
 
-A small animated sunflower-themed web page built around the invitation “Have a flower.” A dark backdrop and central blooming-flower presentation keep the experience focused on a brief visual moment.
+A small animated sunflower-themed web page built around the invitation “Have a flower.” Open the page to see its dark backdrop and central blooming-flower presentation; it is a brief visual experience, with no additional controls described.
 
 ## Open locally
 
