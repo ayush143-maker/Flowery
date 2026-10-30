@@ -1,6 +1,6 @@
 # Flowery
 
-Flowery is a small animated, sunflower-themed static page built around the invitation “Have a flower.” The top-level `index.html` presents a dark backdrop and a central blooming flower.
+Flowery is a self-contained animated flower page built around the caption “Have, a flower.” A sunflower blooms against a dark, starry backdrop, with a **regrow** control for replaying the animation. The illustration is generated in the page rather than loaded from image files.
 
 ## Preview locally
 
@@ -10,16 +10,16 @@ No package installation is needed. Open `index.html` in a browser, or serve the 
 python -m http.server 8000
 ```
 
-Then visit [http://localhost:8000](http://localhost:8000). No deployment configuration or build step is documented.
+Then visit [http://localhost:8000](http://localhost:8000). The top-level `index.html` is the complete page entry point; there is no documented build step or deployment configuration.
 
-## Editing the page
+## Interacting with the flower
 
-The invitation text, styles, and bloom are in `index.html`. Locate the existing content and styling before editing. The repository root lists only `index.html` and this README, with no separate asset directory. If you add an image or another asset, choose its location deliberately and make the reference in `index.html` match its actual path.
+The bloom begins when the page’s load event applies its `play` class. Select **regrow** to remove and reapply that class, restarting the CSS bloom animation. The sequence draws a growing stem, leaves, and petals, followed by a glow and sparkles; the completed flower sways gently. CSS also draws a twinkling star field.
 
-For a static publication, serve the repository root so the top-level `index.html` is the page entry point. Include any assets added to the page and verify that their paths resolve from the published page. No environment-variable template or environment configuration is indicated by the listed files.
+The flower head is an inline SVG. Page JavaScript generates 260 seed circles within it using a Fibonacci-phyllotaxis calculation, so the seed pattern is created at runtime rather than fetched as a separate asset. The rest of the flower and its visual effects are made with HTML, CSS, and generated SVG elements.
 
-## Repository map
+## Editing and dependencies
 
-- `index.html` — page entry point, invitation, styling, and bloom.
+The invitation, button, styling, animation, and SVG generation are all in `index.html`. The repository root contains no separate asset directory, and the page references no external images, APIs, or local storage. To change the caption or interaction, edit the page’s existing markup and script; if you add media, place it deliberately and update the corresponding relative reference.
 
-After making changes, preview the page in a browser at narrow and wide viewport sizes. Check the invitation, flower, and animation for clipping or overflow; try any interaction added to the page. These are review suggestions, not reports of completed checks.
+For static publication, serve the repository root so the top-level `index.html` is available. Since the illustration and animation are part of that file, no separate image assets need to be deployed. The page does not save interaction state: reloading starts the bloom again, and the regrow action only restarts its on-page animation.
