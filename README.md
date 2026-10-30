@@ -1,6 +1,6 @@
 # Flowery
 
-A small animated sunflower-themed static page built around the invitation “Have a flower.” The top-level `index.html` presents a dark backdrop and a central blooming flower.
+A small animated sunflower-themed static page built around the invitation “Have a flower.” The top-level `index.html` presents a dark backdrop and a central blooming flower. The repository root lists only `index.html` and this README.
 
 ## Preview locally
 
@@ -14,7 +14,16 @@ Then visit http://localhost:8000. No deployment configuration is documented.
 
 ## Personalizing the page
 
-The root files list only `index.html` and this README, so begin by locating the existing invitation text and the styles for the dark backdrop and sunflower in `index.html`. Change the wording or colors there. If you introduce an external image or another asset, add it deliberately and update its reference in `index.html` to match its actual path; no separate asset directory is listed at the repository root.
+Locate the existing invitation text and the styles for the dark backdrop and sunflower in `index.html` before changing them. If you introduce an external image or another asset, add it deliberately and update its reference in `index.html` to match its actual path; no separate asset directory is listed at the repository root.
+
+## Troubleshooting
+
+Use these as diagnostic steps, not as claims that the page currently has a problem:
+
+1. **Confirm the entry page.** Open the top-level `index.html`, or serve the repository directory and visit its root URL. If you serve a different directory, the page you see may not be this project entry.
+2. **Check paths and local files.** Preserve relative paths when moving the page or adding assets. If a local image or other asset fails to load, check that the file is present and that the reference in `index.html` matches its location. The listed root files do not include a separate asset directory.
+3. **Inspect browser diagnostics.** Check the console for errors during page load or the bloom animation. Use the Network panel to inspect failed requests and their URLs; this can help distinguish an incorrect local path from another loading failure.
+4. **Distinguish external requests.** A missing local file is different from an external resource that cannot be reached over the network. No external resources are identified in the current page references; if you add one, verify that it is intentional and that the page remains understandable when it is unavailable.
 
 ## Configuration and data handling
 
@@ -24,10 +33,8 @@ This repository is a static page with no package or backend configuration listed
 
 This is a checklist for future review, not a report of completed browser testing or verified results.
 
-- Open `index.html` in current versions of browsers relevant to the page's intended audience. Also review it through the local server above, so relative asset paths are checked in a served-page context.
-- Inspect the browser console for errors while the page loads and while the bloom animation runs. Investigate errors that could affect the page rather than assuming the visual result is sufficient.
-- Inspect the Network panel for failed requests. Check that local assets added to the page resolve at their referenced paths; the root file list contains no separate asset directory. Review any remote requests added to the page and confirm they are intentional.
-- Check the invitation, dark backdrop, and sunflower at a narrow phone-sized viewport and a wide desktop-sized viewport. Look for clipping, overflow, and layout changes that make the invitation or flower hard to see.
+- Open the page in current versions of browsers relevant to its intended audience. Review both a directly opened page and the local-server view if asset paths are relevant to your changes.
+- Check the invitation, dark backdrop, and sunflower at a narrow phone-sized viewport and a wide desktop-sized viewport. Look for clipping, overflow, or layout changes that make the invitation or flower hard to see.
 - Observe the existing bloom animation. If your change introduces an interaction, try it in the browser.
 - If you add media, review its dimensions and file size for its use. Before removing an asset, check that no page or style still refers to it.
 
